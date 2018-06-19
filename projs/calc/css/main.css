@@ -1,0 +1,54 @@
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    margin: 0 0 25px;
+    padding: 7.5px;
+    text-align: center;
+    font-size: 2em;
+    color:#6cacc5;
+    background-color: #131734;
+    border-bottom: 3px solid #6cacc5;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.25);
+}
+
+.calc-table {
+    margin: 5px auto;
+    background-color: black;
+    font-size: 1.25em;
+    font-weight: 300;
+    color: #6cacc5;
+    border-spacing: 1px;
+}
+
+.calc-table td {
+    min-width: 45px;
+    height: 45px;
+    text-align: center;
+    vertical-align: middle;
+    background: rgba(42, 50, 113, .28);
+    transition: all 0.15s linear;
+}
+
+.calc-table tbody td:hover{
+    background: #201e40;
+}
+
+.calc-table tbody td {
+    cursor: pointer;
+}
+
+/* .calc-table .history {
+    height: 25px;
+    font-size: 0.7em;
+    text-align: left;
+} */

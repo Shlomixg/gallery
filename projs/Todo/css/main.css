@@ -1,0 +1,104 @@
+html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0 0 25px;
+  padding: 7.5px;
+  text-align: center;
+  font-size: 2em;
+  font-weight: 300;
+  color: #6B5B95;
+  background-color: #BFD641;
+  border-bottom: 3px solid #6B5B95;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.25);
+}
+
+main {
+  min-width: 300px;
+  margin: 5px;
+  padding: 15px;
+  border: 1px solid #131734;
+  background-color: #6B5B95;
+}
+
+main h1 {
+  margin: 5px;
+  padding: 0;
+  text-align: center;
+  font-weight: 300;
+  color: #BFD641;
+}
+
+.todos {
+  padding: 0;
+  list-style: none;
+  font-weight: 300;
+  color: #BFD641;
+}
+
+.todo {
+  cursor: pointer;
+  padding: 10px 0;
+  border-bottom: 1px solid gainsboro;
+}
+
+.todo.done {
+  text-decoration: line-through;
+}
+
+.todo .btns {
+  float: right;
+}
+
+.btn {
+  cursor: pointer;
+  border: 0;
+  transition: all 0.2s linear;
+}
+
+.btn-add {
+  color: #195da6;
+  background: #BFD641;
+}
+.btn-add:hover {
+  color: #BFD641;
+  background: #195da6;
+}
+
+.btn-arrow {
+  color: #bb2525;
+  background-color: #BFD641;
+}
+.btn-arrow:hover {
+  color: #ee1515;
+  background: #ddff00;
+}
+
+.btn-danger {
+  padding: 2px 5px;
+  font-size: 0.75em;
+  color: #bb2525;
+  background-color: #BFD641;
+}
+.btn-danger:hover {
+  color: white;
+  background-color: #bb2525;
+}
+
+.hide {
+  display: none;
+}

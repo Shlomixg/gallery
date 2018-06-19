@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Mine Sweeper</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body onload="initGame()">
+    <div class="header">
+        Mine Sweeper
+    </div>
+    <div class="btn-levels">
+        <button onclick="initGame(4)">4x4 Board</button>
+        <button onclick="initGame(6)">6x6 Board</button>
+        <button onclick="initGame(8)">8x8 Board</button>
+        <button onclick="initGame(12)">12x12 Board</button>
+    </div>
+    <div class="game">
+        <div class="game-data">
+            <div class="record-time"></div>
+            <div class="mines-counter">000</div>
+            <div class="emoji-status" onclick="initGame()"></div>
+            <div class="timer"></div>
+        </div>
+        <table class="tbl-sweeper">
+            <tbody class="board">
+
+            </tbody>
+        </table>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

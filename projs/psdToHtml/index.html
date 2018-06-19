@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="lib/hamburgers/hamburgers.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+</head>
+
+<body class="flex column">
+
+    <header>
+        <nav class="container flex space-between align-items-center">
+            <div class="logo flex align-items-center justify-content-center">blogin</div>
+            <div class="btn-toggle-menu hamburger hamburger--collapse" type="button" onclick="toggleMenu(this)">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </div>
+            <ul class="main-menu clean-list">
+                <li class="dropdown" onclick="toggleDropdown()">
+                    <a class="dropdown-link" href="#">journal ▽</a>
+                    <ul class="dropdown-list clean-list">
+                        <li>
+                            <a href="#">october 2016</a>
+                        </li>
+                        <li>
+                            <a href="#">january 2017</a>
+                        </li>
+                        <li>
+                            <a href="#">april 2017</a>
+                        </li>
+                        <li>
+                            <a href="#">july 2017</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">about</a>
+                </li>
+                <li>
+                    <a href="#">work</a>
+                </li>
+                <li>
+                    <a href="#">contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <ul class="posts-list clean-list flex column">
+            <li class="post-item flex" onclick="toggleModal()">
+                <div class="post-image">
+                    <img src="img/england.png" />
+                </div>
+                <div class="post-body flex column space-between">
+                    <div class="post-title">
+                        <h3>Duis aute irure dolor in henderit in voluptate.</h3>
+                    </div>
+                    <div class="post-text">
+                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo doconsequat,
+                            sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur...</p>
+                    </div>
+                    <button type="button" class="btn-arrow" onclick="toggleModal(); event.stopPropagation()">
+                        continue reading
+                    </button>
+                </div>
+            </li>
+            <li class="post-item flex" onclick="toggleModal()">
+                <div class="post-image">
+                    <img src="img/sunset.png" />
+                </div>
+                <div class="post-body flex column space-between">
+                    <div class="post-title">
+                        <h3>Duis aute irure dolor in henderit in voluptate.</h3>
+                    </div>
+                    <div class="post-text">
+                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo doconsequat,
+                            sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur...</p>
+                    </div>
+                    <button type="button" class="btn-arrow" onclick="toggleModal(); event.stopPropagation()">
+                        continue reading
+                    </button>
+                </div>
+            </li>
+            <li class="post-item flex" onclick="toggleModal()">
+                <div class="post-image">
+                    <img src="img/wheat.png" />
+                </div>
+                <div class="post-body flex column space-between">
+                    <div class="post-title">
+                        <h3>Duis aute irure dolor in henderit in voluptate.</h3>
+                    </div>
+                    <div class="post-text">
+                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo doconsequat,
+                            sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur...</p>
+                    </div>
+                    <button type="button" class="btn-arrow" onclick="toggleModal(); event.stopPropagation()">
+                        continue reading
+                    </button>
+                </div>
+            </li>
+        </ul>
+        <nav class="nav-pages flex space-between">
+            <a class="prev bold align-items-center" href="#">&larr; previous</a>
+            <a class="next bold align-items-center" href="#">next &rarr;</a>
+        </nav>
+    </main>
+
+    <footer>
+        <div class="about">
+            <div class="logo">blogin</div>
+            <div class="links">&copy; 2018 Blogin.com - All Rights Reserved - Find more free Templates at
+                <a href="http://www.pixelhint.com">
+                    <span class="bold">Pixelhint.com</span>
+                </a>
+            </div>
+            <div class="social-links">
+                <ul class="social-list clean-list">
+                    <li class="icon facebook">
+                        <a class="flex" href="https://www.facebook.com/blogin">
+                            <img src="img/social/facebook.svg" />
+                        </a>
+                    </li>
+                    <li class="icon twitter">
+                        <a class="flex" href="https://www.twitter.com/blogin">
+                            <img src="img/social/twitter.svg" />
+                        </a>
+                    </li>
+                    <li class="icon behance">
+                        <a class="flex" href="https://www.behance.net/blogin">
+                            <img src="img/social/behance.svg" />
+                        </a>
+                    </li>
+                    <li class="icon basketball">
+                        <a class="flex" href="https://www.basketball.com/blogin">
+                            <img src="img/social/basketball.svg" />
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div id="modal" class="modal" onclick="toggleModal()">
+        <!-- Modal content -->
+        <div class="modal-content" onclick="event.stopPropagation()">
+            <div class="modal-header">
+                <span class="close" onclick="toggleModal()">&times;</span>
+                <h2>Join us to get access to the latest stories!</h2>
+            </div>
+            <div class="modal-body">
+                <input class="email-input" type="email" placeholder="Insert your email" />
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-submit" type="button" onclick="">Submit</button>
+                <button class="btn btn-close-modal" type="button" onclick="toggleModal()">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- service srcipts -->
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

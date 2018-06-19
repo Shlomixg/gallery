@@ -1,0 +1,114 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  text-align: center;
+}
+
+.boardContainer table {
+  margin: 0 auto;
+}
+
+.cell {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.modal {
+  display: none;
+  opacity: 0;
+  z-index: 5;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  background: rgba(102, 101, 101, 0.4);
+  color: white;
+  box-sizing: border-box;
+  transition: opacity 0.3s linear;
+}
+
+.modal-open {
+  display: block;
+  opacity: 1;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 0;
+  width: 80%;
+}
+
+.modal h1 {
+  margin: 0;
+  padding: 0;
+  font-weight: 300;
+}
+
+.modal-header {
+  padding: 8px;
+  background-color: #00aaff;
+  color: white;
+}
+
+.btn-close {
+  cursor: pointer;
+  float: right;
+  font-size: 2em;
+  font-weight: 300;
+  color: white;
+  border: 0;
+  background: transparent;
+}
+
+.btn-close:hover,
+.btn-close:focus {
+    color: #000;
+    text-decoration: none;
+}
+
+.modal-body {
+  padding: 20px;
+  text-align: center
+}
+
+.btn-play {
+  cursor: pointer;
+  margin: 8px;
+  padding: 10px 15px;
+  height: 45px;
+  text-decoration: none;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  color: #00aaff;
+  border: 1px solid #00aaff;
+  background-color: white;
+}
+
+.btn-play:hover {
+  color: white;
+  background-color: #00aaff;
+  box-shadow: 0 10px 20px 5px rgba(0, 0, 0, 0.25);
+}

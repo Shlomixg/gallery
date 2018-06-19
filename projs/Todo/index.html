@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="lib/animate.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Todos</title>
+</head>
+
+<body onload="init()">
+    <header>
+        TODOS
+    </header>
+    <main>
+        <h1>
+            Todos
+            <span class="active-count"></span>
+            (total:
+            <span class="total-count"></span>)
+        </h1>
+        <div class="container">
+            <button class="btn btn-add" onclick="addTodo()">+</button>
+            <ul class="todos"></ul>
+            <select class="status-filter" onchange="setFilter(this.value)">
+                <option selected="selected">Filter By</option>
+                <option>All</option>
+                <option>Active</option>
+                <option>Done</option>
+            </select>
+            <select class="todo-sort" onchange="sortTodos(this.value)">
+                <option selected="selected">Sort By</option>
+                <option>Date</option>
+                <option>Importance</option>
+                <option>Alphabet</option>
+            </select>
+        </div>
+    </main>
+
+    <script src="js/utils.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

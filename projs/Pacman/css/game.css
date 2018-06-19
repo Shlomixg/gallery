@@ -1,0 +1,61 @@
+/* Style Pacman icon */
+.pacman {
+    margin: 10px;
+}
+
+.pacman-top {
+    background-color: yellow;
+    height: 8px;
+    width: 16px;
+    border-radius: 8px 8px 0 0;
+    animation: spin1 1s infinite linear;
+}
+
+.pacman-bottom {
+    background-color: yellow;
+    height: 8px;
+    width: 16px;
+    border-radius: 0 0 8px 8px;
+    animation: spin2 1s infinite linear;
+}
+
+/* Animation */
+@keyframes spin1 {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(-35deg);
+    }
+}
+@keyframes spin2 {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(35deg);
+    }
+}
+
+/* Change direction */
+.right {
+    transform: rotate(0);
+}
+
+.down {
+    transform: rotate(90deg);
+}
+
+.left {
+    transform: rotate(180deg);
+}
+
+.up {
+    transform: rotate(270deg);
+}
+
+/* TODO: Ghosts scared */
+
+.scared {
+    color: #0a0add;
+}

@@ -1,0 +1,86 @@
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    margin: 0 0 25px;
+    padding: 7.5px;
+    text-align: center;
+    font-size: 2.5em;
+    color:#FFDD00;
+    background-color: teal;
+    border-bottom: 3px solid #FFDD00;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.25);
+}
+
+.pickSize {
+    text-align: center;
+}
+
+.pickSize button {
+    margin: 5px;
+    padding: 10px 15px;
+    height: 45px;
+    text-decoration: none;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    color: teal;
+    border: 1px solid teal;
+    border-radius: 5px;
+    background-color: white;
+    transition: all 0.4s linear;
+    cursor: pointer;
+}
+
+.pickSize button:hover {
+    color: #FFDD00;
+    background-color: teal;
+    box-shadow: 0 10px 20px 5px rgba(0, 0, 0, 0.25);
+}
+
+.timer {
+    min-height: 40px;
+    margin: 15px;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 600;
+    color: teal;
+    transition: all  0.5s linear;
+}
+
+.winmiation:hover {
+    transform: scale(1.5, 1.5);
+}
+
+.game {
+    text-align: center;
+}
+
+.gameTable {
+    margin: 5px auto;
+}
+
+.numCell {
+    cursor: pointer;
+    width: 65px;
+    height: 65px;
+    font-size: 2em;
+    border: 1px solid teal;
+    border-radius: 5px;
+    color: teal;
+}
+
+.clickedNum {
+    cursor: default;
+    background-color: teal;
+    color: #FFDD00;
+}

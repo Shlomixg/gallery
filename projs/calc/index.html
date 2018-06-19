@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body onload="resetAll()" onkeyup="handleKey(event)">
+    <div class="header">
+        Calculator
+    </div>
+    <table class="calc-table">
+        <thead>
+            <!-- <tr>
+                <td class="history" colspan="5"></td>
+            </tr> -->
+            <tr>
+                <td class="res-display" colspan="5"></td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="digit" onclick="clearMemory()">MC</td>
+                <td class="digit" onclick="recallMemory()">MR</td>
+                <td class="digit" onclick="storeMemory()">MS</td>
+                <td class="digit" onclick="addMemory()">M+</td>
+                <td class="digit" onclick="subMemory()">M-</td>
+            </tr>
+            <tr>
+                <td class="digit" onclick="deleteLastDigit()">&#9003;</td>
+                <td class="digit" onclick="resetCurrNum()">CE</td>
+                <td class="digit" onclick="resetAll()">C</td>
+                <td class="digit" onclick="negativeNum()">&#177;</td>
+                <td class="digit" onclick="calcRoot()">&#8730;</td>
+            </tr>
+            <tr>
+                <td class="digit" onclick="addDigit(7)">7</td>
+                <td class="digit" onclick="addDigit(8)">8</td>
+                <td class="digit" onclick="addDigit(9)">9</td>
+                <td class="digit" onclick="setOp(this.textContent)">/</td>
+                <td class="digit" onclick="setOp(this.textContent)">%</td>
+            </tr>
+            <tr>
+                <td class="digit" onclick="addDigit(4)">4</td>
+                <td class="digit" onclick="addDigit(5)">5</td>
+                <td class="digit" onclick="addDigit(6)">6</td>
+                <td class="digit" onclick="setOp(this.textContent)">*</td>
+                <td class="digit" onclick="calc1X()">1/x</td>
+            </tr>
+            <tr>
+                <td class="digit" onclick="addDigit(1)">1</td>
+                <td class="digit" onclick="addDigit(2)">2</td>
+                <td class="digit" onclick="addDigit(3)">3</td>
+                <td class="digit" onclick="setOp(this.textContent)">-</td>
+                <td onclick="calcResult()" rowspan="2">=</td>
+            </tr>
+            <tr>
+                <td class="digit" onclick="addDigit(0)" colspan="2">0</td>
+                <td onclick="turnOnDecimal()">.</td>
+                <td onclick="setOp(this.textContent)">+</td>
+            </tr>
+        </tbody>
+    </table>
+    <script src=js/main.js></script>
+</body>
+
+</html>
